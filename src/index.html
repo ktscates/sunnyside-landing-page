@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="max-w-[1440px] mx-auto">
+    <header class="bg-nav-blue p-8">
+      <nav class="flex justify-between items-center">
+        <div>
+          <img src="../images/logo.svg" alt="logo" />
+        </div>
+        <div class="hidden xl:block lg:block md:hidden">
+          <ul
+            class="flex justify-between items-center text-white gap-6 font-barlow font-semibold text-lg"
+          >
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <button
+              class="bg-white py-3 px-6 rounded-full uppercase font-semibold text-gray-900"
+            >
+              Contact
+            </button>
+          </ul>
+        </div>
+        <div class="block xl:hidden lg:hidden md:block" id="icon-hamburger">
+          <img src="../images/icon-hamburger.svg" alt="logo" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile menu container -->
+    <div
+      class="lg:hidden xl:hidden md:hidden hidden bg-white mx-auto"
+      id="mobile-menu"
+    >
+      <div
+        class="flex flex-col text-center text-lg gap-8 py-8 text-gray-400 font-semibold"
+      >
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a
+          href="#"
+          class="bg-nav-yellow mx-auto py-3 px-6 rounded-full uppercase font-semibold text-gray-900"
+          >Contact</a
+        >
+      </div>
+    </div>
+
+    <main>
+      <section class="relative min-h-screen flex justify-center text-white">
+        <img
+          class="hidden xl:block lg:block md:hidden absolute inset-0 w-full h-full object-cover z-0"
+          src="../images/desktop/image-header.jpg"
+          alt=""
+        />
+        <img
+          class="block xl:hidden lg:hidden md:block absolute inset-0 w-full h-full object-cover z-0"
+          src="../images/mobile/image-header.jpg"
+          alt=""
+        />
+        <div
+          class="xl:relative z-10 flex flex-col mt-44 gap-52 xl:gap-52 lg:gap-72 xl:mt-44 lg:mt-80 md:mt-72 md:gap-64"
+        >
+          <h1
+            class="xl:text-6xl lg:text-6xl tracking-widest text-5xl leading-normal text-center uppercase font-Fraunces font-black"
+          >
+            We are creatives
+          </h1>
+          <img
+            class="mx-auto animate-bounce"
+            src="../images/icon-arrow-down.svg"
+            alt="arrow"
+          />
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 min-h-screen">
+        <div
+          class="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-rows-1 xl:place-content-center"
+        >
+          <div
+            class="bg-white xl:px-24 lg:px-20 md:px-2 md:py-8 px-6 xl:py-0 py-12 xl:text-left lg:text-left md:text-left text-center flex flex-col justify-center gap-8 xl:order-first lg:order-first md:order-first order-last"
+          >
+            <h3 class="text-3xl font-black font-Fraunces text-gray-800">
+              Transform your brand
+            </h3>
+            <p class="font-semibold text-gray-400">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <button
+              class="font-bold text-lg text-gray-800 font-Fraunces xl:mx-0 lg:mx-0 md:mx-0 mx-auto text-left border-b-8 border-btn-btn xl:w-1/5 lg:w-1/3 md:w-1/3"
+            >
+              Learn more
+            </button>
+          </div>
+          <div>
+            <img
+              class="hidden md:block lg:block xl:block w-full object-cover"
+              src="../images/desktop/image-transform.jpg"
+              alt=""
+            />
+            <img
+              class="block md:hidden lg:hidden xl:hidden w-full object-cover"
+              src="../images/mobile/image-transform.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-rows xl:place-content-center"
+        >
+          <div
+            class="bg-white xl:px-24 lg:px-20 md:px-2 md:py-6 px-6 xl:py-0 py-12 xl:text-left md:text-left lg:text-left text-center flex flex-col justify-center gap-8"
+          >
+            <h3 class="text-3xl font-black font-Fraunces text-gray-800">
+              Stand out to the right audience
+            </h3>
+            <p class="font-semibold text-gray-400">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <button
+              class="font-bold text-lg text-gray-800 font-Fraunces xl:mx-0 lg:mx-0 md:mx-0 mx-auto text-left border-b-8 border-btn-hover border-opacity-20 xl:w-1/5 lg:w-1/3 md:w-1/3"
+            >
+              Learn more
+            </button>
+          </div>
+          <div class="order-first">
+            <img
+              class="hidden xl:block lg:block md:block w-full object-cover"
+              src="../images/desktop/image-stand-out.jpg"
+              alt=""
+            />
+            <img
+              class="block xl:hidden lg:hidden md:hidden w-full object-cover"
+              src="../images/mobile/image-stand-out.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-rows xl:place-content-center"
+        >
+          <div class="relative">
+            <img
+              class="hidden xl:block w-full object-cover"
+              src="../images/desktop/image-graphic-design.jpg"
+              alt=""
+            />
+            <img
+              class="block xl:hidden w-full object-cover"
+              src="../images/mobile/image-graphic-design.jpg"
+              alt=""
+            />
+            <div
+              class="absolute flex flex-col gap-8 justify-center items-center text-center bottom-0 py-12 xl:px-44 px-2"
+            >
+              <h3 class="font-black font-Fraunces text-3xl text-green-graphic">
+                Graphic design
+              </h3>
+              <p class="font-barlow font-semibold text-base text-green-graphic">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
+          </div>
+          <div class="relative">
+            <div>
+              <img
+                class="hidden xl:block w-full object-cover"
+                src="../images/desktop/image-photography.jpg"
+                alt=""
+              />
+              <img
+                class="block xl:hidden w-full object-cover"
+                src="../images/mobile/image-photography.jpg"
+                alt=""
+              />
+              <div
+                class="absolute flex flex-col gap-8 justify-center items-center text-center bottom-0 py-12 xl:px-44 px-2"
+              >
+                <h3 class="font-black font-Fraunces text-3xl text-blue-photo">
+                  Photography
+                </h3>
+                <p class="font-barlow font-semibold text-base text-blue-photo">
+                  Increase your credibility by getting the most stunning,
+                  high-quality photos that improve your business image.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white xl:min-h-screen xl:py-40 xl:px-12 py-24">
+        <h3
+          class="font-Fraunces xl:text-2xl text-xl font-black text-gray-400 text-center uppercase tracking-widest"
+        >
+          Client testimonials
+        </h3>
+        <div
+          class="grid xl:grid-cols-3 lg:grid-cols-3 grid-rows justify-center my-auto items-center xl:gap-6 gap-12 xl:py-40 py-12 px-6 xl:px-0 lg:px-1 lg:py-24 md:px-24"
+        >
+          <div class="flex flex-col items-center gap-8 text-center">
+            <img
+              class="mx-auto rounded-full w-20 h-20"
+              src="../images/image-emily.jpg"
+              alt=""
+            />
+            <p class="xl:w-3/4 font-bold font-barlow text-gray-400">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <div>
+              <h6 class="font-black font-Fraunces text-lg">Emily R.</h6>
+              <p class="font-barlow font-semibold text-gray-300 text-md">
+                Marketing Director
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-8 text-center">
+            <img
+              class="mx-auto rounded-full w-20 h-20"
+              src="../images/image-thomas.jpg"
+              alt=""
+            />
+            <p class="xl:w-3/4 font-bold font-barlow text-gray-400">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div>
+              <h6 class="font-black font-Fraunces text-lg">Thomas S.</h6>
+              <p class="font-barlow font-semibold text-gray-300 text-md">
+                Chief Operating Officer
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-8 text-center">
+            <img
+              class="mx-auto rounded-full w-20 h-20"
+              src="../images/image-jennie.jpg"
+              alt=""
+            />
+            <p class="xl:w-3/4 font-bold font-barlow text-gray-400">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div>
+              <h6 class="font-black font-Fraunces text-lg">Jennie F.</h6>
+              <p class="font-barlow font-semibold text-gray-300 text-md">
+                Business Owner
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 grid-cols-2"
+      >
+        <img
+          class="hidden xl:block"
+          src="../images/desktop/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+        <img
+          class="hidden xl:block"
+          src="../images/desktop/image-gallery-orange.jpg"
+          alt=""
+        />
+        <img
+          class="hidden xl:block"
+          src="../images/desktop/image-gallery-cone.jpg"
+          alt=""
+        />
+        <img
+          class="hidden xl:block"
+          src="../images/desktop/image-gallery-sugarcubes.jpg"
+          alt=""
+        />
+        <img
+          class="block xl:hidden"
+          src="../images/mobile/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+        <img
+          class="block xl:hidden"
+          src="../images/mobile/image-gallery-orange.jpg"
+          alt=""
+        />
+        <img
+          class="block xl:hidden"
+          src="../images/mobile/image-gallery-cone.jpg"
+          alt=""
+        />
+        <img
+          class="block xl:hidden"
+          src="../images/mobile/image-gallery-sugar-cubes.jpg"
+          alt=""
+        />
+      </section>
+      <section class="bg-footer-green py-24">
+        <img
+          class="w-40 h-9 text-green-graphic mx-auto"
+          src="../images/logo-green.svg"
+          alt=""
+        />
+        <div class="py-12 xl:px-0 px-12 text-lg font-semibold font-barlow">
+          <ul
+            class="flex justify-center items-center xl:gap-8 gap-3 text-green-graphic"
+          >
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+          <div class="flex justify-center items-center gap-8 pt-24">
+            <img src="../images/icon-facebook.svg" alt="" />
+            <img src="../images/icon-instagram.svg" alt="" />
+            <img src="../images/icon-twitter.svg" alt="" />
+            <img src="../images/icon-pinterest.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Cates Nsengiyumva</a>.
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenu = document.getElementById("mobile-menu");
+        const hamburgerIcon = document.getElementById("icon-hamburger");
+
+        hamburgerIcon.addEventListener("click", () => {
+          mobileMenu.style.display =
+            mobileMenu.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+</html>
