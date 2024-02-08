@@ -1,6 +1,6 @@
 # Frontend Mentor - Sunnyside agency landing page solution
 
-This is a solution to the [Sunnyside agency landing page solution](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Sunnyside agency landing page solution](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Sunnyside agency landing page](/images/desktop/image-header.jpg)
+![Sunnyside agency landing page](/design/desktop-design.jpg)
 
 ### Links
 
