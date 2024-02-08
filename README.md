@@ -16,7 +16,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [On github](https://github.com/ktscates/sunnyside-landing-page)
-- Live Site URL: [Live](https://gregarious-flan-6a0381.netlify.app/)
+- Live Site URL: [Live](https://ktscates.github.io/sunnyside-landing-page/)
 
 ### Built with
 
